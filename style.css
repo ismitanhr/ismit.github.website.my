@@ -1,0 +1,12 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: hsl(218, 74%, 68%);
+}
+
+#news {
+  background-color: #ffe69c;
+}
+
+section {
+  padding-top: 5rem;
+}
