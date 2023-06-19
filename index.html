@@ -17,6 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <!-- Akhir Botstrap -->
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
@@ -190,14 +192,14 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div class="col-md-4"  data-aos="fade-right">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
               neque quas quibusdam earum deserunt unde, excepturi atque dolore
               impedit natus illum vel debitis rem quod?
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
               deserunt. Ratione, cumque vel sed mollitia saepe rem adipisci nam
@@ -226,12 +228,12 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/story/berita.jpg"
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
+               <img 
+               src="img/story/berita.jpg"
                 class="card-img-top"
                 alt="project1"
-              />
+            />
               <div class="card-body">
                 <p class="card-text">
                   Editor ismit TERNATE, KOMPAS.com - Kejaksaan Negeri Halmahera
@@ -241,7 +243,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50">
               <img
                 src="img/story/123.jpg.jpg"
                 class="card-img-top"
@@ -256,7 +258,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="100">
               <img
                 src="img/story/1234.jpg.jpg"
                 class="card-img-top"
@@ -271,7 +273,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="150">
               <img
                 src="img/story/12345.jpg.jpg"
                 class="card-img-top"
@@ -285,7 +287,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="200">
               <img
                 src="img/story/123456.jpg.jpg"
                 class="card-img-top"
@@ -300,26 +302,11 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left"  data-aos-duration="500" data-aos-delay="250">
               <img
-                src="img/project/123456.jpg.jpg"
+                src="img/gallery/LR_Gohu-Tuna3.jpg"
                 class="card-img-top"
                 alt="project6"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="img/project/123456.jpg.jpg"
-                class="card-img-top"
-                alt="project7"
               />
               <div class="card-body">
                 <p class="card-text">
@@ -341,8 +328,34 @@
     </section>
     <!-- akhir projects -->
 
-    <!-- crausel -->
-    <!-- akhir crausel -->
+    <!-- Galery -->
+    <section id="gallery">
+      <div id="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Galerry</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3"data-aos="fade-down" data-aos-delay="50" >
+            <a href="#">
+              <img src="img/gallery/bentteng1.jpg" alt="gambar 1" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down" data-aos-delay="150">
+            <a href="#">
+              <img src="img/gallery/LR_Benteng2.jpg" alt="gambar 2" class="img-fluid" gallery-img>
+            </a>
+          </div>
+          <div class="col-md-3" data-aos="fade-down"data-aos-delay="200">
+            <a href="#">
+              <img src="img/gallery/Tempat-Wisata4.jpg" alt="gambar 3" class="img-fluid" gallery-img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galery -->
 
     <!-- contact -->
     <section id="contact">
@@ -426,6 +439,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
+    </script>
+    
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwcbCBKnl-XydpOj3ovgIE28ggHLVE75XOqzvX1xgX81LMh4ZwpE475hD6pkA02kefrlw/exec";
